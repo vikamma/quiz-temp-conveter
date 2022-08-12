@@ -1,7 +1,7 @@
 import { tryConvert } from "./index.js";
 
 it("Convert between Celsius and Fahrenheit", () => {
-  expect(stuff.tryConvert(100, "toFahrenheit")).toBe("212");
+  expect(tryConvert(100, "toFahrenheit")).toBe("212");
 });
 
 it("Convert between Fahrenheit and Celsius", () => {
