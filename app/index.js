@@ -7,6 +7,13 @@ const converters = {
   },
 };
 
+/**
+ * Tries to convert temperatures using the converters object.
+ *
+ * @param {(string|number)} temperature - The temperature to convert from.
+ * @param {string} conversion - "toCelsius" or "toFahrenheit".
+ * @returns {string} The converted temperature or "" if the conversion failed.
+ */
 export default function tryConvert(temperature, conversion) {
   const input = parseFloat(temperature);
   if (Number.isNaN(input)) {
